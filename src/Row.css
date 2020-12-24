@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Bebas Neue', cursive;
+}
+
+
+.mainRow{
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+
+.mainRow::-webkit-scrollbar {
+    display: none;
+  }
+
+.poster2{
+    display: inline-block;
+}
+.poster1{
+    object-fit: contain;
+    margin-right: 10px;
+    height: 200px;
+}
+
+.poster1:hover{
+    transform: scale(1.1);
+    cursor:pointer;
+    transition-duration: 500ms;
+}
+
+.poster2{
+    object-fit: contain;
+    overflow: hidden;
+    
+    max-width: 200px;
+    min-width: 200px;
+    margin-right: 10px;
+    max-height: 20px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.banner1{
+    height: 440px;
+    width: auto;
+    background-size: cover;
+    background-position: "center center";
+   
+    color: white;
+    object-fit: contain;
+    display: flex;
+    align-items: center;}
+
+.banner2{
+    margin-left: 40px;
+    max-width: 40vw;
+    max-height:10vh!important;
+    object-fit: contain;
+    flex-wrap: wrap;
+}
+
+.buttons1{
+    display: flex;
+}
+
+button{
+    padding: 5px;
+    margin: 2px;
+}
+
+.banner1 {
+    border   : 1px #000 dashed;
+    position : relative;
+  }
+ 
+.navBar{
+    width: 100%;
+    height: 60px;
+    object-fit: contain;
+    display: flex;
+    justify-content: start;
+    position: fixed;
+    z-index: 1;
+    background-color: black;
+}
+
+.navBar_brand{
+    object-fit: contain;
+    height: 25px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
